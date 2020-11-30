@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 2
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-list *ngFor="let post of posts">
+    <ion-item>
+      <ion-label>
+        <h5> Hello {{post.title}}</h5>
+        <ion-card-content> World{{post.body}}</ion-card-content>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
