@@ -10,10 +10,10 @@
 
   <ion-list *ngFor="let post of posts">
     <ion-item>
-      <ion-label>
-        <h5> Hello {{post.title}}</h5>
-        <ion-card-content> World{{post.body}}</ion-card-content>
-      </ion-label>
+      <ion-card>
+        <h4>{{post.title}}</h4>
+        <ion-card-content>{{post.body}}</ion-card-content>
+      </ion-card>
     </ion-item>
   </ion-list>
 
